@@ -70,11 +70,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* BRAND INSIDE MENU */
-.menu-brand {
-  margin-bottom: 15px;
-}
-
+/* BRAND */
 .menu-brand h2 {
   font-size: 20px;
   color: #00bcd4;
@@ -91,10 +87,10 @@ body {
   font-size: 12px;
   line-height: 1.6;
   color: #aaa;
-  margin-bottom: 20px;
+  margin: 15px 0 20px;
 }
 
-/* MENU LINKS */
+/* LINKS */
 .side-menu a {
   display: block;
   color: white;
@@ -109,7 +105,7 @@ body {
   padding-left: 6px;
 }
 
-/* ================= OVERLAY ================= */
+/* OVERLAY */
 .overlay {
   position: fixed;
   top: 0;
@@ -121,14 +117,13 @@ body {
   z-index: 1500;
 }
 
-/* ================= HERO SECTION ================= */
+/* ================= HERO ================= */
 .hero {
   padding: 60px 20px;
   display: flex;
   justify-content: center;
 }
 
-/* HERO CARD */
 .hero-card {
   position: relative;
   width: 100%;
@@ -147,7 +142,7 @@ body {
   transform: scale(1.05);
 }
 
-/* DARK OVERLAY */
+/* OVERLAY */
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -157,7 +152,7 @@ body {
   background: rgba(0, 0, 0, 0.45);
 }
 
-/* HERO TEXT */
+/* HERO TEXT (ONLY 2 LINES) */
 .hero-content {
   position: absolute;
   top: 50%;
@@ -165,7 +160,6 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  width: 90%;
 }
 
 .hero-content h1 {
@@ -176,13 +170,22 @@ body {
 
 .hero-content h2 {
   font-size: 22px;
-  margin: 10px 0;
+  margin-top: 10px;
   color: #00bcd4;
 }
 
-.hero-content p {
+/* ================= TEXT BELOW HERO ================= */
+.hero-text-below {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.hero-text-below p {
   font-size: 15px;
   line-height: 1.8;
+  color: #444;
   font-family: 'Inter', sans-serif;
 }
 
@@ -201,16 +204,15 @@ body {
   background: #f8fbff;
   border: 1px solid #e0ecff;
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-  animation: fadeIn 1.2s ease-in-out;
 }
 
-/* BIG PROFILE IMAGE */
+/* BIG ROUND IMAGE */
 .profile-card img {
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid #007bff;
+  border: 6px solid #007bff;
   margin-bottom: 15px;
 }
 
@@ -223,34 +225,6 @@ body {
   color: #444;
   font-size: 15px;
   line-height: 1.6;
-}
-
-/* ================= FADE ANIMATION ================= */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* HERO ANIMATION */
-.hero-content h1,
-.hero-content h2,
-.hero-content p {
-  animation: fadeIn 1.2s ease-in-out forwards;
-  opacity: 0;
-}
-
-.hero-content h2 {
-  animation-delay: 0.3s;
-}
-
-.hero-content p {
-  animation-delay: 0.6s;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -269,8 +243,8 @@ body {
   }
 
   .profile-card img {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
   }
 
-  }
+}
