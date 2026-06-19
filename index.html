@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EMMYTECH</title>
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<!-- ================= NAVBAR ================= -->
 <header class="navbar">
 
   <div class="logo">
@@ -17,49 +22,73 @@
     <span>EMMYTECH</span>
   </div>
 
-  <div class="menu-btn" onclick="openMenu()">
-    ☰
-  </div>
+  <div class="menu-btn" onclick="openMenu()">☰</div>
 
 </header>
 
-<!-- SIDE MENU -->
+<!-- ================= SIDE MENU ================= -->
 <div id="sideMenu" class="side-menu">
+
   <div class="close-btn" onclick="closeMenu()">✖</div>
+
+  <div class="menu-brand">
+    <h2>EMMYTECH</h2>
+    <p>Digital Innovation & Technology Solutions</p>
+  </div>
+
+  <p class="menu-text">
+    EMMYTECH is a forward-thinking technology brand dedicated to building modern,
+    scalable, and intelligent digital solutions. We focus on delivering high-quality
+    web development, software engineering, and innovative digital experiences that
+    empower individuals and businesses to succeed in a fast-changing technological world.
+  </p>
 
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="services.html">Services</a>
   <a href="contact.html">Contact</a>
+
 </div>
 
 <div id="overlay" class="overlay" onclick="closeMenu()"></div>
 
-<!-- HERO SECTION -->
+<!-- ================= HERO SECTION ================= -->
 <section class="hero">
 
-  <div class="hero-container">
+  <div class="hero-card">
 
-    <div class="hero-image-box">
-      <img src="https://i.postimg.cc/zXh1Pb3C/photo-1550751827-4bd374c3f58b.jpg" alt="Tech Image">
-    </div>
+    <img src="https://i.postimg.cc/zXh1Pb3C/photo-1550751827-4bd374c3f58b.jpg" alt="Tech Image">
 
-    <div class="hero-text">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
 
       <h1>EMMYTECH</h1>
 
       <h2>Innovating the Future Through Technology</h2>
 
       <p>
-        In today’s digital era, technology is the foundation of progress, innovation, and global transformation.
-        EMMYTECH is committed to delivering modern, scalable, and intelligent digital solutions that empower
-        businesses and individuals to thrive in a fast-evolving world.
+        In today’s rapidly evolving digital ecosystem, technology has become the foundation upon which innovation,
+        communication, and global development are built. At EMMYTECH, we are committed to leading this transformation
+        by designing and delivering intelligent, scalable, and future-ready digital solutions that empower individuals,
+        startups, and established enterprises to thrive in a highly competitive world.
+
         <br><br>
-        We specialize in web development, software engineering, UI/UX design, and digital solutions that combine
-        creativity with functionality. Our goal is to build systems that are not only powerful but also simple,
-        elegant, and user-focused.
+
+        Our expertise spans across modern web development, advanced software engineering, responsive user interface
+        design, and the creation of seamless digital experiences that combine functionality with creativity. We focus
+        on building systems that are not only visually appealing but also highly efficient, secure, and performance-driven.
+
         <br><br>
-        At EMMYTECH, we believe the future belongs to innovation — and we are here to build it.
+
+        EMMYTECH believes that technology should simplify life, accelerate growth, and unlock new possibilities. This
+        vision drives us to continuously innovate, adapt, and deliver solutions that meet global standards while staying
+        user-focused and accessible.
+
+        <br><br>
+
+        We are not just a technology brand — we are a digital partner dedicated to shaping the future through innovation,
+        excellence, and consistency.
       </p>
 
     </div>
@@ -68,7 +97,7 @@
 
 </section>
 
-<!-- PROFILE SECTION -->
+<!-- ================= PROFILE SECTION ================= -->
 <section class="profile-section">
 
   <div class="profile-card">
@@ -87,8 +116,8 @@
 
 </section>
 
-<!-- SCRIPT -->
+<!-- ================= SCRIPT ================= -->
 <script src="script.js"></script>
 
 </body>
-    </html>
+  </html>
