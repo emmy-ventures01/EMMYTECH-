@@ -70,7 +70,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* MENU BRAND */
+/* BRAND */
 .menu-brand h2 {
   font-size: 20px;
   color: #00bcd4;
@@ -90,7 +90,7 @@ body {
   margin: 15px 0 25px;
 }
 
-/* MENU LINKS */
+/* LINKS */
 .side-menu a {
   display: block;
   color: white;
@@ -142,14 +142,14 @@ body {
   transform: scale(1.05);
 }
 
-/* DARK OVERLAY */
+/* OVERLAY */
 .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0,0,0,0.45);
 }
 
 /* HERO TEXT (2 LINES ONLY) */
@@ -174,23 +174,26 @@ body {
   color: #00bcd4;
 }
 
-/* ================= BLUE INFO BOX ================= */
-.hero-text-below {
+/* ================= INFO BOX (FAINT BLUE) ================= */
+.content-section {
   padding: 50px 20px;
   display: flex;
   justify-content: center;
 }
 
 .info-box {
-  background: linear-gradient(135deg, #007bff, #00bcd4);
+  background: #f4f8ff; /* faint blue */
   padding: 35px;
   border-radius: 18px;
   max-width: 900px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  width: 100%;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  border: 1px solid #dbe8ff;
 }
 
+/* TEXT INSIDE BOX */
 .info-box p {
-  color: #ffffff;
+  color: #333;
   font-size: 15px;
   line-height: 1.8;
   font-family: 'Inter', sans-serif;
