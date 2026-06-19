@@ -70,7 +70,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* BRAND */
+/* MENU BRAND */
 .menu-brand h2 {
   font-size: 20px;
   color: #00bcd4;
@@ -85,12 +85,12 @@ body {
 /* MENU TEXT */
 .menu-text {
   font-size: 12px;
-  line-height: 1.6;
-  color: #aaa;
-  margin: 15px 0 20px;
+  line-height: 1.7;
+  color: #b5b5b5;
+  margin: 15px 0 25px;
 }
 
-/* LINKS */
+/* MENU LINKS */
 .side-menu a {
   display: block;
   color: white;
@@ -105,7 +105,7 @@ body {
   padding-left: 6px;
 }
 
-/* OVERLAY */
+/* ================= OVERLAY ================= */
 .overlay {
   position: fixed;
   top: 0;
@@ -142,7 +142,7 @@ body {
   transform: scale(1.05);
 }
 
-/* OVERLAY */
+/* DARK OVERLAY */
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -152,7 +152,7 @@ body {
   background: rgba(0, 0, 0, 0.45);
 }
 
-/* HERO TEXT (ONLY 2 LINES) */
+/* HERO TEXT (2 LINES ONLY) */
 .hero-content {
   position: absolute;
   top: 50%;
@@ -174,22 +174,30 @@ body {
   color: #00bcd4;
 }
 
-/* ================= TEXT BELOW HERO ================= */
+/* ================= BLUE INFO BOX ================= */
 .hero-text-below {
   padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.info-box {
+  background: linear-gradient(135deg, #007bff, #00bcd4);
+  padding: 35px;
+  border-radius: 18px;
   max-width: 900px;
-  margin: auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.info-box p {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.8;
+  font-family: 'Inter', sans-serif;
   text-align: center;
 }
 
-.hero-text-below p {
-  font-size: 15px;
-  line-height: 1.8;
-  color: #444;
-  font-family: 'Inter', sans-serif;
-}
-
-/* ================= PROFILE SECTION ================= */
+/* ================= PROFILE ================= */
 .profile-section {
   padding: 80px 20px;
   display: flex;
@@ -206,7 +214,7 @@ body {
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
-/* BIG ROUND IMAGE */
+/* BIG PROFILE IMAGE */
 .profile-card img {
   width: 240px;
   height: 240px;
@@ -247,4 +255,8 @@ body {
     height: 180px;
   }
 
-}
+  .info-box {
+    padding: 25px;
+  }
+
+  }
